@@ -12,6 +12,7 @@ export async function runServer() {
   try {
     const port: string = process.env.SERVER_PORT;
     const feeCharterOrigin = process.env.FEE_CHARTER_ORIGIN;
+    console.log({feeCharterOrigin})
     const baseApiRoute = "/api/v1";
     //used for btc-fee-watcher
     const corsOptions = {
