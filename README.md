@@ -22,14 +22,14 @@ Place the pre-existing volume directory you have at the path specified in your .
 
 ### Prod
 1. cd ./deployment/config/
-2. cp config.sample.prod .env.prod and update env.prod
+2. cp config.sample.prod .env.prod and update .env.prod
 3. cd ./deployment/scripts
 2. ./build.prod.sh
 3. ./start.prod.sh
 
 ### Dev / Local
 1. cd ./deployment/scripts/
-2. cp config.sample.local .env.local and update env.local
+2. cp config.sample.local .env.local and update .env.local
 3. cd ./deployment/scripts
 4. ./build.local.sh
 5. ./start.local.sh
