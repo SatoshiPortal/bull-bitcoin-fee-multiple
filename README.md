@@ -14,7 +14,8 @@ Linux host with docker
 
 Download current last 1 year history of api specific fee estimates (1-2 block/fastest) for mempool.space as CSV from [txstats](https://txstats.com/d/000000011/fee-estimation?orgId=1&viewPanel=2&var-source=mempool.space) and rename file as per Watcher ENV var CSV_FILE_PATH (default: fee_estimate_history.csv). Rename csv headers to "time", "satsPerByte" (ensure using CSV UTF-8 format to edit file or else expected and actual headers will give mismatch error even if they visually appear same), and place in ./btc-fee-watcher/assets/ 
 
-**If restarting with an existing data volume**:
+**If restarting with an existing data volume**:  
+
 Place the pre-existing volume directory you have at the path specified in your .env file by the var `POSTGRES_VOLUME_PATH`
 
 **Then:**
